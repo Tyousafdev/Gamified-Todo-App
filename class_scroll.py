@@ -75,7 +75,7 @@ class Scroll(object):
         self.hitbox.center = self.position
         
         
-        #self.window_surface.blit(self.sub, (155,250))
+        self.window_surface.blit(self.Quest_panal, (155,250))
         pygame.draw.rect(self.window_surface, (0, 230, 0), self.rect, 2)
         pygame.draw.rect(self.window_surface, (250, 30, 0), self.hitbox, 2)
         if self.hitbox.collidepoint(pos):
