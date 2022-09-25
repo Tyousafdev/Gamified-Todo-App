@@ -1252,7 +1252,7 @@ def game_scene():
         
         
         
-scroll_method = Scroll((300,200),window_surface, screen_width, screen_height, state_stack, game_scene, stats)       
+scroll_method = Scroll(window_surface, screen_width, screen_height, state_stack, game_scene, stats)       
 ################################# CREATING COUNTDOWN TIMER FUNCTION #######################################       
 def CountDown_timer():
     counter = 650
