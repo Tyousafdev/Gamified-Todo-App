@@ -10,7 +10,8 @@ import pygame, sys, os, json
 
 from save_system import write_save
 from save_system import create_save
-from class_scroll import Scroll
+#from class_scroll import Scroll
+from Scroll_Class import Scroll
 
 ############################ FUTURE PATCHES #############################################
 # for resizable options make the main screen a surface and a another window screen 
@@ -135,9 +136,9 @@ new_hovering_tab_get_rect2 = pygame.transform.scale(hovering_tab, (70,60))
 
 ############################ SOUNDS #######################################
 
-button_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'button_sound.wav'))
+button_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'LoL_HoverClickSound_ver4.mp3'))
 
-button_hover_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'button_hover_sound.wav'))
+button_hover_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'LoL_HoverSound_ver3.mp3'))
 
 game_sound = pygame.mixer.Sound(os.path.join(sound_dir, 'wending.wav'))
 
@@ -923,7 +924,7 @@ def Quest_menu():
         
         window_surface.blit(menu_surface, menu_rect)
         window_surface.blit(stats_text, (stats_text_get_rect))
-        scroll_method.update_event(window_surface)
+        scroll_method.Render()
         
         
         
