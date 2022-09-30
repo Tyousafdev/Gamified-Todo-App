@@ -48,14 +48,18 @@ screen_height = 900
 
 pygame.display.set_caption("Task game")
 icon_image = pygame.image.load(os.path.join(background_dir, "ghost_icon.jpg"))
+
 pygame.display.set_icon(icon_image)
 window_surface = pygame.display.set_mode((screen_width,screen_height))
-game_font = pygame.font.Font("Boxy-Bold.ttf", 20)
+
 clock = pygame.time.Clock()
 animation_clock = pygame.time.Clock()
 font = pygame.font.SysFont('Consolas', 20)
-algard_font = pygame.font.Font("alagard.ttf", 40)
-title_algard_font = pygame.font.Font("alagard.ttf", 75)
+
+
+game_font = pygame.font.Font("assets/font/Boxy-Bold.ttf", 20)
+algard_font = pygame.font.Font("assets/font/alagard.ttf", 40)
+title_algard_font = pygame.font.Font("assets/font/alagard.ttf", 75)
 
 
 
